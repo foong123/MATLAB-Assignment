@@ -6,7 +6,6 @@ function Graph_settings()
 
     grid on;
     grid minor;
-    title('Line of Sight Path Gain');
     xlabel('Hallway Length/m');
     ylabel('Path Gain/dB');
     
