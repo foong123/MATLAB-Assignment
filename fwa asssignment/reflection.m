@@ -17,8 +17,8 @@ Epsilon_wall = 3; %Relative permittivity of wall
 Epsilon_air = 1; %Relative permittivity of wall
 wavelength = c/f;
 Beta = (2*pi)/wavelength;
-reflection_order = 2; %Reflection order
-steps = 0.01;    %Steps size
+reflection_order = 3; %Reflection order
+steps = 0.1;    %Steps size
 figure_counter = 2; %Figure counter
 %##############################################################
 
@@ -31,10 +31,10 @@ zs = 0;
 %Receiver coordinates
 px = 10;
 qx = 22;
-array_size = (qx - px) / steps;
-xr = linspace(px,qx,array_size);
+xr = 10:steps:22;
 yr = 3;
 zr = 0;
+array_size = size(xr,2);
 
 %Walls y-coordinates
 upper_wall_height = 6;
